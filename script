@@ -146,7 +146,7 @@ Tab:AddButton({
 
 	Callback = function()
 
-         local args = {[1] = ""Dugatti PR}
+         local args = {[1] = "Dugatti PR"}
 
 game:GetService("ReplicatedStorage").SpawnVeh:FireServer(unpack(args))
 
