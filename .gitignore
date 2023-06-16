@@ -1,33 +1,93 @@
-# Gradle files
-.gradle/
-build/
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Nani cuto", HidePremium = false, SaveConfig = true, ConfigFolder = "Js a hs guy"})
 
-# Local configuration file (sdk path, etc)
-local.properties
+local Tab = Window:MakeTab({
+	Name = "Spawn"
+})
+	
+local Section = Tab:AddSection({
+	Name = "Click to spawn"
+})
 
-# Log/OS Files
-*.log
+Tab:AddButton({
+	Name = "YZF Dirtbike",
+	Callback = function()
+      		local args = {[1] = "YZF Dirtbike"}
+game:GetService("ReplicatedStorage").SpawnVeh:FireServer(unpack(args))
+  	end    
+})
+Tab:AddButton({
+	Name = "Donda CBR 600RR",
+	Callback = function()
+         local args = {[1] = "Donda CBR 600RR"}
+game:GetService("ReplicatedStorage").SpawnVeh:FireServer(unpack(args))
+   end
+})
+Tab:AddButton({
+	Name = "Yamura R6",
+	Callback = function()
+         local args = {[1] = "Yamura R6"}
+game:GetService("ReplicatedStorage").SpawnVeh:FireServer(unpack(args))
+   end
+})
+Tab:AddButton({
+	Name = "Donda NR750",
+	Callback = function()
+         local args = {[1] = "Donda NR750"}
+game:GetService("ReplicatedStorage").SpawnVeh:FireServer(unpack(args))
+   end
+})
+Tab:AddButton({
+	Name = "Yamura MT10",
+	Callback = function()
+         local args = {[1] = "Yamura MT10"}
+game:GetService("ReplicatedStorage").SpawnVeh:FireServer(unpack(args))
+   end
+})
+Tab:AddButton({
+	Name = "Samurai ZX10R",
+	Callback = function()
+         local args = {[1] = "Samurai ZX10R"}
+game:GetService("ReplicatedStorage").SpawnVeh:FireServer(unpack(args))
+   end
+})
+Tab:AddButton({
+	Name = "Donda CBR1000RR Fireblade",
+	Callback = function()
+         local args = {[1] = "Donda CBR1000RR Fireblade"}
+game:GetService("ReplicatedStorage").SpawnVeh:FireServer(unpack(args))
+   end
+})
+Tab:AddButton({
+	Name = "Beamer S1000RR",
+	Callback = function()
+         local args = {[1] = "Beamer S1000RR"}
+game:GetService("ReplicatedStorage").SpawnVeh:FireServer(unpack(args))
+   end
+})
+Tab:AddButton({
+	Name = "MV Agustus",
+	Callback = function()
+         local args = {[1] = "MV Agustus"}
+game:GetService("ReplicatedStorage").SpawnVeh:FireServer(unpack(args))
+   end
+})
+Tab:AddButton({
+	Name = "Dugatti PR",
+	Callback = function()
+         local args = {[1] = ""Dugatti PR}
+game:GetService("ReplicatedStorage").SpawnVeh:FireServer(unpack(args))
+   end
+})
+Tab:AddButton({
+	Name = "Kawalski Samurai H2R",
+	Callback = function()
+         local args = {[1] = "Kawalski Samurai H2R"}
+game:GetService("ReplicatedStorage").SpawnVeh:FireServer(unpack(args))
+   end
+})
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.apk
-output.json
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
 
-# Keystore files
-*.jks
-*.keystore
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
-
-# Android Profiling
-*.hprof
+OrionLib:Init()
